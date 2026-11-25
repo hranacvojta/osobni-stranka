@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TODO (tmavý režim): po přidání tmavého schématu změňte content na "light dark" -->
-  <meta name="color-scheme" content="light">
-  <title>TODO: Jméno Příjmení – osobní stránka</title>
+  <meta name="color-scheme" content="light dark">
+  <title>Vojtěch Hranáč – osobní stránka</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,25 +27,33 @@
 
     <section id="o-mne" class="card" aria-labelledby="o-mne-nadpis">
       <h2 id="o-mne-nadpis">O mně</h2>
-      <!-- TODO: vložte fotku nebo obrázek do složky img/, odkomentujte řádek níže
-           a vyplňte výstižný alt (u čistě dekorativního obrázku alt prázdný):
-      -->
-      <p>TODO: pár vět o vás.</p>
+      <img src="img/profil.jpg" alt="Portrét Vojtěcha Hranáče">
+      <p>Jmenuji se Vojtěch Hranáč a studuji informační technologie na SPŠE Ječná v Praze. Baví mě vývoj aplikací v Javě a C#, tvorba webových stránek, správa Linuxu i stavba vlastní elektroniky a 3D tisk.</p>
     </section>
 
     <section id="projekty" aria-labelledby="projekty-nadpis">
       <h2 id="projekty-nadpis">Projekty</h2>
-      <!-- TODO: alespoň tři položky, každá s obrázkem. Zkopírujte celý prvek article a upravte ho. -->
       <article class="card">
-        <h3>TODO: název projektu</h3>
-        <p>TODO: stručný popis projektu.</p>
+        <img src="img/pvlapp.png" alt="Ukázka uživatelského rozhraní desktopové aplikace PvlApp">
+        <h3>PvlApp</h3>
+        <p>Vícevláknová desktopová aplikace v Javě (Swing), která pomocí knihoven Jsoup a Gson stahuje a přehledně zobrazuje aktuální data z vodoměrných stanic.</p>
+      </article>
+      <article class="card">
+        <img src="img/ancient-lore.png" alt="Snímek obrazovky z textové RPG hry Ancient Lore">
+        <h3>Ancient Lore</h3>
+        <p>Konzolová RPG hra v Javě s načítáním herního světa ze souborů JSON, rozvětvenými dialogy s postavami, inventářem, soubojovým systémem a testy v JUnit 5.</p>
+      </article>
+      <article class="card">
+        <img src="img/najdi-rozdily.png" alt="Ukázka 3D scény ze hry Najdi rozdíly v enginu Unity">
+        <h3>3D hra Najdi rozdíly</h3>
+        <p>Postřehová 3D hra vytvořená v enginu Unity a jazyce C# se dvěma zrcadlovými místnostmi, náhodnou záměnou objektů a počítadlem skóre.</p>
       </article>
     </section>
 
     <section id="dovednosti" aria-labelledby="dovednosti-nadpis">
       <h2 id="dovednosti-nadpis">Dovednosti</h2>
       <table>
-        <caption>TODO: popisek tabulky</caption>
+        <caption>Přehled technických a jazykových dovedností</caption>
         <thead>
           <tr>
             <th scope="col">Dovednost</th>
@@ -55,8 +62,24 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">TODO: dovednost</th>
-            <td>TODO: úroveň</td>
+            <th scope="row">Java</th>
+            <td>Pokročilý</td>
+          </tr>
+          <tr>
+            <th scope="row">HTML a CSS</th>
+            <td>Pokročilý</td>
+          </tr>
+          <tr>
+            <th scope="row">Linux a počítačové sítě</th>
+            <td>Středně pokročilý</td>
+          </tr>
+          <tr>
+            <th scope="row">3D modelování (Blender) a 3D tisk</th>
+            <td>Pokročilý</td>
+          </tr>
+          <tr>
+            <th scope="row">Znalost anglického jazyka</th>
+            <td>Úroveň B2</td>
           </tr>
         </tbody>
       </table>
@@ -65,15 +88,14 @@
     <section id="kontakt" class="card" aria-labelledby="kontakt-nadpis">
       <h2 id="kontakt-nadpis">Kontakt</h2>
       <address>
-        <!-- TODO: e-mail jako odkaz (mailto:), případně město nebo odkaz na profil -->
-        <p>E-mail: <a href="mailto:TODO">TODO</a></p>
+        <p>E-mail: <a href="mailto:vojtech.hranac@gmail.com">vojtech.hranac@gmail.com</a></p>
       </address>
     </section>
 
   </main>
 
   <footer>
-    <p>© TODO: rok a jméno</p>
+    <p>© 2026 Vojtěch Hranáč</p>
   </footer>
 </body>
 </html>
